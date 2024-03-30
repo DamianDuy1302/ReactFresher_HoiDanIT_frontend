@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.order-page {
+    // min-height: 70vh;
+
+    .order-list {
+        max-height: 84vh;
+        overflow-y: scroll;
+
+        .book {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 12px;
+
+
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+
+            }
+
+            .book-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+
+                .book-price-total {
+                    margin-left: 15px;
+                }
+
+                .book-quantity {
+                    // display: inline-block;
+                    margin-left: 12px;
+                    align-items: center;
+
+                }
+            }
+
+            .book-delete {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                .book-delete-button {
+                    // background-color: #f47d1f;
+                    color: #ff5a2c;
+                    font-weight: 600;
+                    padding: 5px;
+                    border: 1px solid rgb(210, 210, 210);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .order-payment {
+        background-color: #fff;
+
+        padding: 30px 15px 10px 10px;
+        padding-top: 30px;
+
+        .order-payment-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .order-payment-button {
+            width: 100%;
+            background-color: #ff5a2c;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 45px;
+            border-radius: 5px;
+
+
+        }
+
+        .order-payment-button:hover {
+            background-color:
+                #f47d1f;
+        }
+
+
+    }
+}
+
+.order-payment-section {
+    // padding: 0 !important;
+}

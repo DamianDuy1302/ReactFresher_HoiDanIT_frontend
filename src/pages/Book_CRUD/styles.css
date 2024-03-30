@@ -1,0 +1,91 @@
+.grid {
+    display: grid;
+}
+
+.user_crud {
+    /* min-width: 700px; */
+}
+
+.user_crud-form__input {
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+
+}
+
+.user_crud-form__buttons {
+    display: flex;
+    justify-content: end;
+    transform: translateY(-12px);
+}
+
+.user_crud-form__buttons button {
+    margin-left: .5rem;
+}
+
+.user_crud-options {
+    display: flex;
+    justify-content: end;
+}
+
+.user_crud-options button {
+    margin-left: .5rem;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.icon {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.user_crud-table__actions {
+    display: flex;
+    justify-content: start;
+}
+
+.user_crud-form {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: .75rem;
+}
+
+.user_crud-table {
+    /* background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: .75rem; */
+}
+
+.user_crud-table__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767.98px) {
+    .user_crud-form__input {
+        grid-template-columns: auto;
+        column-gap: 1rem;
+
+    }
+}

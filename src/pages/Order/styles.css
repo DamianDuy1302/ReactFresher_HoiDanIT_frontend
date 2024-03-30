@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.order-page .order-list {
+  max-height: 84vh;
+  overflow-y: scroll;
+}
+.order-page .order-list .book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.order-page .order-list .book img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.order-page .order-list .book .book-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.order-page .order-list .book .book-price .book-price-total {
+  margin-left: 15px;
+}
+.order-page .order-list .book .book-price .book-quantity {
+  margin-left: 12px;
+  align-items: center;
+}
+.order-page .order-list .book .book-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.order-page .order-list .book .book-delete .book-delete-button {
+  color: #ff5a2c;
+  font-weight: 600;
+  padding: 5px;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 5px;
+}
+.order-page .order-payment {
+  background-color: #fff;
+  padding: 30px 15px 10px 10px;
+  padding-top: 30px;
+}
+.order-page .order-payment .order-payment-content {
+  display: flex;
+  justify-content: space-between;
+}
+.order-page .order-payment .order-payment-button {
+  width: 100%;
+  background-color: #ff5a2c;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 45px;
+  border-radius: 5px;
+}
+.order-page .order-payment .order-payment-button:hover {
+  background-color: #f47d1f;
+}/*# sourceMappingURL=styles.css.map */

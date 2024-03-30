@@ -1,0 +1,7 @@
+.user_crud-drawer{
+    width: 60vw !important;
+    background-color: red;
+}
+.user_crud-description{
+    padding: 1rem;
+}

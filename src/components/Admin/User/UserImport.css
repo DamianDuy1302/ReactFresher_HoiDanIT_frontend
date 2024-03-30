@@ -1,0 +1,14 @@
+.dragger{
+    /* margin-top: 30px; */
+    /* height: 105px; */
+}
+.ant-upload-wrapper p{
+    /* row-gap: 5px !important; */
+    margin: 0 !important;
+}
+.modal{
+    width: 800px !important;
+}
+.user_crud-form__buttons{
+    margin-top: 25px;
+}

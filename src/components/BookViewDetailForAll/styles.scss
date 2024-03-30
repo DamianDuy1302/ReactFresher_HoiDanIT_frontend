@@ -1,0 +1,174 @@
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 90vh !important;
+    padding-right: 20px !important;
+    // padding-bottom: 20px !important;
+    // background-color: red !important;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    padding: 12px;
+    min-height: 84vh !important;
+    margin-bottom: 12px;
+
+    span {
+        font-size: 14px;
+
+    }
+
+    .images-section {
+        // width: 65%;
+        padding: 12px 32px 0px 32px;
+
+        .image-gallery {
+            width: 100% !important;
+        }
+    }
+
+    .content-section {
+        margin-top: 12px;
+        // width: 35%;
+
+        .author {}
+
+        .mainText {
+            margin-top: 16px;
+            // background-color: red;
+            font-size: 24px;
+            // font-weight: 600;
+        }
+
+        .sold {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            font-size: 14px;
+
+            .rate {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .price {
+            background-color: #f5f5f5;
+            padding: 15px 10px;
+            margin: 16px 0;
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(255, 98, 0);
+            // width: 350px;
+        }
+
+        .transport {
+            // width: 350px;
+            margin-top: 16px;
+            // background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ship {
+                background-color: rgb(255, 98, 0);
+                padding: 8px;
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+
+        .quantity {
+            // width: 350px;
+            // background-color: red;
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .quantity-adjustment {
+                display: flex;
+                // align-items: center;
+
+                div {
+                    // background-color: aqua;
+                    border: 1px solid #ccc;
+                    // border-radius: 5px;
+                    width: 28px;
+                    height: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // margin: 0px 4px;
+                    cursor: pointer;
+                }
+
+                .number {
+                    width: 46px;
+                    cursor: default;
+                    // border-radius: 5px;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    display: flex;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .payment {
+            // background-color: aqua;
+            display: flex;
+            // width: 350px;
+            margin-top: 16px;
+            justify-content: space-between;
+
+            .add-to-cart {
+                width: 70%;
+                background-color: rgb(255, 255, 255);
+                padding: 12px;
+                margin-right: 16px;
+                border: 2px solid rgb(255, 98, 0);
+                color: rgb(255, 98, 0);
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+
+            .add-to-cart:hover {
+
+                background-color: rgb(255, 247, 243);
+                color: rgb(255, 98, 0);
+            }
+
+            .buy-now {
+                width: 30%;
+                background-color: rgb(255, 98, 0);
+                padding: 12px;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .buy-now:hover {
+                background-color: rgb(254, 121, 38);
+                color: #fff;
+
+            }
+        }
+
+    }
+
+}

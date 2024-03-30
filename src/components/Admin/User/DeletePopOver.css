@@ -1,0 +1,33 @@
+.pop-over-delete_buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.pop-over-delete_button {
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: .25s ease-in-out;
+}
+
+.cancel {
+    border: #fff 1px solid;
+}
+
+.cancel:hover {
+    color: #1677ff;
+    border: #1677ff 1px solid;
+}
+
+.yes {
+    background-color: #1677ff;
+    color: #fff;
+}
+
+.yes:hover {
+    background-color: #1677ffd0;
+
+}
