@@ -173,7 +173,7 @@ const HeaderDefault = () => {
                         <div className="header__cart">
                             <Popover
                                 placement="bottomRight" title={"Product list"} content={handleLoadProductList} arrow={true}>
-                                <Badge onClick={() => { navi("/order") }} size="small" count={carts?.length ?? 0} overflowCount={10}>
+                                <Badge size="small" count={carts?.length ?? 0} overflowCount={10}>
                                     < ShoppingCartOutlined style={{ fontSize: '26px', color: '#005b96', cursor: "pointer" }} />
                                 </Badge>
                             </Popover>
