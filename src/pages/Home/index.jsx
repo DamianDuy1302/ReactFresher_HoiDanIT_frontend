@@ -1,5 +1,5 @@
 import { Button, Checkbox, Col, Divider, Form, InputNumber, Pagination, Rate, Row, Spin, Tabs } from "antd"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { Navigate, useNavigate } from "react-router-dom"
 import "./styles.css"
 import { RedoOutlined } from "@ant-design/icons"
@@ -7,6 +7,9 @@ import FormItem from "antd/es/form/FormItem"
 import { useEffect, useState } from "react"
 import { getBooks, getBooksCategory } from "../../services/api"
 const Home = () => {
+
+    const bookNameRedux = useSelector(state => state.book.bookName)
+    // console.log(bookName)
     const [bookCategory, setBookCategory] = useState([])
     const [bookList, setBookList] = useState([])
     const [current, setCurrent] = useState(1)
@@ -29,6 +32,9 @@ const Home = () => {
     const fetchBooks = async () => {
         setIsLoading(true)
         let query = `current=${current}&pageSize=${pageSize}`
+        if (bookNameRedux) {
+            query += `&mainText=/${bookNameRedux}/i`
+        }
         if (filter) {
             query += `&${filter}`
         }
@@ -44,13 +50,13 @@ const Home = () => {
             setBookList(res.data.result)
             setTotal(res.data.meta.total)
             // setIsLoading(false)
-            // console.log(bookList)
+            console.log(bookList)
             setIsLoading(false)
         }
     }
     useEffect(() => {
         fetchBooks()
-    }, [current, pageSize, filter, sortQuery, category, price])
+    }, [bookNameRedux, current, pageSize, filter, sortQuery, category, price])
 
     useEffect(() => {
         fetchBookCategory()

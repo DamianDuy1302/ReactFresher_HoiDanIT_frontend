@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { callLogout } from "../../services/api";
 import { doLogoutAction } from "../../redux/account/accountSlice";
+import { doSearchBook } from "../../redux/book/bookSlice";
 import "./styles.css"
 import Profile from "../Profile";
 const HeaderDefault = () => {
@@ -19,8 +20,10 @@ const HeaderDefault = () => {
     const navi = useNavigate()
     const [show, setShow] = useState(true);
     const [openProfileModal, setOpenProfileModal] = useState(false)
-    const handleSubmit = () => {
-
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const bookName = (e.target[0].value)
+        dispatch(doSearchBook({ bookName: bookName }))
     }
     const carts = useSelector(state => state.order.carts)
     console.log(carts)

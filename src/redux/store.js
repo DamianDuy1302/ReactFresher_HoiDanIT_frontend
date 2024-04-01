@@ -12,6 +12,7 @@ import {
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import orderReducer from '../redux/order/orderSlice';
+import bookReducer from '../redux/book/bookSlice'
 const persistConfig = {
   key: 'root',
   version: 1,
@@ -22,6 +23,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   account: accountReducer,
   order: orderReducer,
+  book: bookReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
