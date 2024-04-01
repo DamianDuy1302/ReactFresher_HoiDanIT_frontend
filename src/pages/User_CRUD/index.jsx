@@ -61,6 +61,7 @@ const User_CRUD = () => {
         if (e.phone) {
             query += `&phone=/${e.phone}/i`
         }
+        setCurrent(1)
         setFilter(query)
 
     }
